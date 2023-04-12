@@ -31,3 +31,8 @@ map('n', '<leader>ff', [[:Telescope find_files<cr>]], { noremap = true, silent =
 map('n', '<leader>fg', [[:Telescope live_grep<cr>]], { noremap = true, silent = true })
 map('n', '<leader>fb', [[:Telescope buffers<cr>]], { noremap = true, silent = true })
 map('n', '<leader>fh', [[:Telescope help_tags<cr>]], { noremap = true, silent = true })
+
+vim.cmd([[
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+]]
+)

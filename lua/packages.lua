@@ -16,6 +16,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   {
+    'neoclide/coc.nvim',
+    branch = 'release',
+  },
+  {
     'nvim-telescope/telescope.nvim',
     dependencies = {
       'nvim-lua/popup.nvim',
