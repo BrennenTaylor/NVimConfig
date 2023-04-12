@@ -1,4 +1,4 @@
-require('vars') -- variables
+require('opts') -- variables
 
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
