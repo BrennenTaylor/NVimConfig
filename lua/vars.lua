@@ -1,0 +1,12 @@
+vim.opt.mouse = 'a'
+vim.opt.number = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = true
+vim.opt.wrap = true
+vim.opt.breakindent = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.cursorline = true
+vim.opt.swapfile = false
