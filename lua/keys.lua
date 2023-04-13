@@ -20,7 +20,7 @@ map('n', '<C-k>', '<C-w>k', {})
 map('n', '<C-l>', '<C-w>l', {})
 
 -- terminal operations
-map('n', '<leader>ter', ':FloatermToggle<cr>', {})
+map('n', '<leader>ft', ':FloatermToggle<cr>', {})
 map('t', '<Esc>', '<C-\\><C-n>:FloatermToggle<cr>', {})
 
 -- nvim-tree
