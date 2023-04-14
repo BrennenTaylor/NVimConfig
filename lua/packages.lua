@@ -19,6 +19,7 @@ require('lazy').setup({
     'neoclide/coc.nvim',
     branch = 'release',
   },
+  'projekt0n/circles.nvim',
   {
     'nvim-telescope/telescope.nvim',
     dependencies = {
@@ -67,6 +68,15 @@ require('lazy').setup({
   },
 }, {})
 
-require("nvim-tree").setup()
+local circles = require('circles')
+circles.setup()
+
+require("nvim-tree").setup({
+    renderer = {
+        icons = {
+            glyphs = circles.get_nvimtree_glyphs(),
+        },
+    },
+})
 require("nvim-web-devicons").setup()
 require("nvim-web-devicons").get_icons()
